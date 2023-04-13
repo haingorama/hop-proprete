@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<title>Formulaire</title>
+<link rel="stylesheet" type="text/css" href="css/contact.css" />
+<link rel="stylesheet" type="text/css" href="css/styles.css" />
+<link rel="stylesheet" type="text/css" href="css/styles1.css" />
+<meta
+    name="viewport"
+    content="width=device-width, height=device-height, user-scalable=no, maximum-scale = 1.0, minimum-scale=1.0, initial-scale=1.0"
+/>
+
+<style>
+    @import url("https://fonts.googleapis.com/css?family=Expletus+Sans");
+
+    * {
+    margin: 0;
+    padding: 0;
+    }
+    body {
+    width: 100%;
+    }
+    .wrapper {
+    margin-top: 150px;
+    }
+    h2 {
+    margin-bottom: 50px;
+    }
+    footer {
+    width: 100%;
+    margin-left: 0;
+    }
+
+    .cta {
+    width: 170px;
+    height: 40px;
+    margin-left: 280px;
+    padding: 10px 0 30px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    border-radius: 10px;
+    background-image: linear-gradient(
+        260deg,
+        #ffd802,
+        #f3cb10,
+        #ffff00,
+        #ffff00
+    );
+    color: black;
+    }
+
+    .cta-2 {
+    width: 170px;
+    height: 40px;
+    padding: 10px 0 30px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    border-radius: 10px;
+    background-image: linear-gradient(
+        260deg,
+        #ffd802,
+        #f3cb10,
+        #ffff00,
+        #ffff00
+    );
+    color: black;
+    }
+
+    @media screen and (max-width: 414px) {
+    .wrapper {
+        width: 100%;
+    }
+    .cta,
+    .cta-2 {
+        margin-left: 90px;
+    }
+    .adresse ul {
+        margin-left: -50px;
+    }
+    }
+    .menu li {
+    padding-left: 20px;
+    padding-top: 0;
+    }
+    .logo p {
+    font-size: 1.1em;
+    padding: 20px 17px;
+    }
+    .logo {
+    margin-right: 50px;
+    }
+    /* ------------Tablette----------- */
+
+    @media screen and (min-width: 415px) and (max-width: 768px) {
+    /*--Section 8--*/
+    footer {
+        width: 750px;
+        padding-left: 150px;
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .bas-de-page {
+        width: 650px;
+        margin-left: 50px;
+    }
+    .navigation ul {
+        width: 200px;
+    }
+    .colonne {
+        flex-direction: row;
+        width: 650px;
+        margin-left: -150px;
+    }
+    .adresse {
+        margin: 0 auto;
+    }
+    .coordonnees {
+        margin-top: 30px;
+    }
+    .coordonnees p {
+        margin: 30px 0 20px 40px;
+    }
+    .bouton-s8 {
+        margin: 10px 160px;
+    }
+    .reseaux {
+        margin-left: 50px;
+    }
+    .dropbtn {
+        margin-right: 90px;
+    }
+    .case,
+    .case-message {
+        width: 750px;
+    }
+    }
+</style>
+</head>
+
+<body>
+    <header>
+      <a id="section1"></a>
+      <!--logo-->
+
+      <!--nav-->
+      <nav class="menu">
+        <div class="logo">
+          <img
+            src="images/logo-sans.png"
+            width="70px"
+            height="70px"
+            alt="logo"
+          />
+          <p>HOP PROPRETE</p>
+        </div>
+
+        <div class="dropdown">
+          <!--Menu Burger-->
+          <button class="dropbtn">
+            <div class="container" onclick="myFunction(this)">
+              <div class="bar1"></div>
+              <div class="bar2"></div>
+              <div class="bar3"></div>
+            </div>
+          </button>
+
+          <div class="dropdown-content">
+            <ul>
+              <li><a href="index.html">Accueil</a></li>
+              <li><a href="index.html#section2">Présentation</a></li>
+              <li><a href="index.html#section3">Notre offre</a></li>
+              <li><a href="index.html#section4">Nos atouts</a></li>
+              <li><a href="index.html#section5">Nos clients</a></li>
+              <li><a href="index.html#section6">Nos réalisations</a></li>
+              <li><a href="index.html#section7">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <div class="wrapper">
+    <main>
+        <h2>FORMULAIRE</h2>
+        <form action="">
+        <div class="groupe1">
+            <div class="ensemble">
+            <label for="nom">Nom*</label>
+            <input type="text" class="case" />
+            </div>
+            <div class="ensemble">
+            <label for="prenom">Prénom</label>
+            <input type="text" class="case" />
+            </div>
+            <div class="ensemble">
+            <label for="adresse">Adresse</label>
+            <input type="text" class="case" />
+            </div>
+            <div class="ensemble">
+            <label for="téléphone">Téléphone</label>
+            <input type="text" class="case" />
+            </div>
+            <div class="ensemble">
+            <label for="email">Email</label>
+            <input type="text" class="case" />
+            </div>
+        </div>
+
+        <div class="message">
+            <label for="message">Message</label>
+            <input type="text" class="case-message" />
+
+            <div class="calltoaction">
+            <input type="submit" value="Pièces jointes" class="cta-2" />
+
+            <input type="submit" value="Envoyer" class="cta" />
+            </div>
+        </div>
+        </form>
+    </main>
+
+    <!----------             ---***---          ----------! 
+            --------- // Footer //--------->
+
+    <footer>
+    <a id="section8"></a>
+
+    <section class="bas-de-page">
+        <div class="colonne">
+        <div class="navigation">
+            <ul>
+            <li><a href="index.html#section2">Accueil</a></li>
+            <li>
+                <a href="index.html#section2#section2"
+                >Présentaion de l'entreprise</a
+                >
+            </li>
+            <li><a href="index.html#section2#section3">Notre offre</a></li>
+            <li><a href="index.html#section2#section4">Nos atouts</a></li>
+            <li><a href="index.html#section2#section5">Notre équipe</a></li>
+            <li><a href="index.html#section2#section6">Nos clients</a></li>
+            <li>
+                <a href="index.html#section2#section7">Nos réalisations</a>
+            </li>
+            </ul>
+        </div>
+        <div class="adresse">
+            <p>HOP PROPRETÉ</p>
+            <ul>
+            <li>12 rue Paul Bert</li>
+            <li>75008 Paris</li>
+            <li>04 39 68 86 12</li>
+            <li>Mail : contact@hotproprete.fr</li>
+            <li>Site : hopproprete.fr</li>
+            </ul>
+        </div>
+
+        <div class="reseaux">
+            <h4>Suivez-nous sur :</h4>
+            <a href="https://fr-fr.facebook.com/">
+            <img
+                src="images/s8-facebook.png"
+                alt="facebook"
+                width="50px"
+                height="auto"
+            />
+            </a>
+            <a href="https://fr.linkedin.com/">
+            <img
+                src="images/s8-linkedin.png"
+                alt="linkedin"
+                width="50px"
+                height="auto"
+            />
+            </a>
+            <a href="https://www.snapchat.com/l/fr-fr/">
+            <img
+                src="images/s8-snapchat.png"
+                alt="snapchat"
+                width="50px"
+                height="auto"
+            />
+            </a>
+            <a href="https://www.google.com/intl/fr/gmail/about/#">
+            <img
+                src="images/s8-partage.png"
+                alt="partage"
+                width="50px"
+                height="auto"
+            />
+            </a>
+        </div>
+        </div>
+    </section>
+
+    <a class="bouton-s8" href="mentions-legales.html">Mentions légales</a>
+    </footer>
+    &copy; 2018
+    </div>
+
+    <script src="js/scripts.js"></script>
+  </body>
+</html>

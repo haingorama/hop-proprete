@@ -1,0 +1,190 @@
+/*----------             ---***---            ----------! 
+             --------- //Bases //---------*/
+body {
+    background-color: #f7f2f2;
+    font-family: 'Expletus Sans', cursive;
+}
+.wrapper {
+    width: 1200px;
+    margin : 0 auto;
+    }
+h2 {
+    text-align: center;
+    margin-bottom: 50px;
+    background-color: white;
+    padding: 10px;
+}
+
+/*----------             ---***---            ----------! 
+             --------- // Section 1 //---------*/
+    .logo {
+        display: block;
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;      
+    }
+    .responsive-img {
+        width: 100%;
+        height: auto;
+        margin: 20px;
+        margin: 0 auto;
+    }
+    .menu {
+        margin-left: 60px;
+    }
+    .menu li {
+        display: inline-block;
+        margin: 30px 0 30px;
+        padding: 0 20px;
+    }
+    .activite {
+        background: white;
+        width: 70%; 
+        margin: auto;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        padding: 1px;
+        text-align: center;
+        color: black;
+        font-family: 'Expletus Sans', cursive;
+        font-style: italic;
+    }
+        a           {text-decoration: none;}
+        a:link      {color: black}
+        a:visited   {color: black}
+        a:hover     {color: #35B4ED; text-decoration: underline;}
+        a:active    {color: #cfe09b}
+
+/*----------             ---***---            ----------! 
+             --------- // Formulaire //---------*/
+form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+}
+.ensemble {
+    display: flex;
+    flex-direction: column;
+}
+.case{
+    width: 450px; height: 50px;
+    margin: 1px 100px 20px 0;
+}
+.message {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.case-message {
+    width: 647; height: 330px;
+}
+.pieces-jointes {
+    width: 150px; height: 40px;
+    margin: 30px 150px 0 0;
+}
+.case-message {
+    margin-bottom: 30px;
+}
+
+
+/*----------             ---***---            ----------! 
+             --------- // Section 8 //---------*/
+footer {
+	border: 6px solid black;
+    margin-top: 30px;
+    padding: 30px 150px 0;
+    list-style-type: none;
+}
+
+.navigation li,.adresse li, .coordonnees {
+    margin: 0 10px 0 40px;
+    list-style-type: none;
+}
+.adresse  {
+    text-align: center;
+}
+.adresse p {
+    margin-left: 20px;
+}
+.coordonnees p {
+    margin: 10px 25px 40px;
+    font-style: oblique;
+    font-size: 1.2rem;
+}
+.colonne {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+}
+.bouton-s8 {
+    width: 170px;
+    margin: -70px 0;
+    padding: 10px 25px;
+    border-radius: 10px;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    float: right;
+    text-align: center; 
+}
+
+/*----------                  ---***---            ----------! 
+             --------- // **MEDIA QUERIES** //---------*/
+
+/*Mobile*/
+@media screen and (max-width: 414px){
+     .wrapper {width: 100%; margin: auto;}
+    
+    /*--Section 1--*/
+     .menu {
+        margin: 0 auto;
+    }
+    .activite {
+        width: 80%
+    }
+    .img-center {
+        display: none;
+    }
+    
+    /*--Formulaire--*/
+    form {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .message {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .case{
+        width: 100%;
+        margin: 1px 100px 20px 0;
+    }
+    .envoyer {
+        width: 150px; height: 40px;
+        margin: 30px 0px 0;
+    }
+    .pieces-jointes {
+        width: 150px; height: 40px;
+        margin: 30px 150px 0 0;
+    }
+    .calltoaction {
+        margin-left: 25px;
+    }
+     
+     .cta,.cta-2 {margin-left: 90px;}
+
+    .bas-de-page {
+        margin-left: -10px;
+    }
+} 
+    
+    
+    
+    
+    
+    
+    
